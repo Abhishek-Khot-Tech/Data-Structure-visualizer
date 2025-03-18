@@ -15,7 +15,7 @@ import {
 } from "@/components/ui/dialog"
 
 export default function ArraysPage() {
-  const [array, setArray] = useState<number[]>([10, 20, 30, 40, 50])
+  const [array, setArray] = useState<number[]>([1, 2, 3, 4, 5])
   const [newValue, setNewValue] = useState<string>("")
   const [index, setIndex] = useState<string>("")
   const [isAddDialogOpen, setIsAddDialogOpen] = useState(false)
