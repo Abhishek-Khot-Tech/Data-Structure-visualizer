@@ -1,17 +1,14 @@
 import path from "path"
-import { defineConfig } from "vite"
+import tailwindcss from "@tailwindcss/vite"
 import react from "@vitejs/plugin-react"
+import { defineConfig } from "vite"
 
-// https://vitejs.dev/config/
+// https://vite.dev/config/
 export default defineConfig({
-  plugins: [react()],
+  plugins: [react(), tailwindcss()],
   resolve: {
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  build: {
-    outDir: "dist", // this is the default, just here for clarity
-  },
-  base: "/", // ensures proper asset paths in production
 })
