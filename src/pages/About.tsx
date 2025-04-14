@@ -73,28 +73,28 @@ const About = ()=> {
         </CardHeader>
         <CardContent className="text-center">
           <p className="text-lg text-slate-700 dark:text-slate-300">
-            This project was developed by Nitin Verma, a Full Stack Developer
+            This project was developed by Abhishek Khot, a Full Stack Developer
             passionate about Web3, AI, and Open Source Development.
           </p>
 
           <div className="mt-6 flex justify-center space-x-4 text-2xl">
             <Button variant="ghost" asChild>
-              <a href="https://github.com/Nitinverma9784" target="_blank">
+              <a href="https://github.com/Abhishek-Khot" target="_blank">
                 <FontAwesomeIcon icon={faGithub} className="text-gray-800 dark:text-white" />
               </a>
             </Button>
             <Button variant="ghost" asChild>
-              <a href="https://www.linkedin.com/in/nitin-verma-558ba5276/" target="_blank">
+              <a href="https://www.linkedin.com/in/abhishek-r-khot-b42025260/" target="_blank">
                 <FontAwesomeIcon icon={faLinkedin} className="text-blue-600" />
               </a>
             </Button>
             <Button variant="ghost" asChild>
-              <a href="https://x.com/ImKakashi106" target="_blank">
+              <a href="https://x.com/Khot_Abhishek_3" target="_blank">
                 <FontAwesomeIcon icon={faXTwitter} className="text-gray-500" />
               </a>
             </Button>
             <Button variant="ghost" asChild>
-              <a href="https://www.instagram.com/nitinverma9401/" target="_blank">
+              <a href="https://www.instagram.com/abhishek_khot_3/" target="_blank">
                 <FontAwesomeIcon icon={faInstagram} className="text-pink-500" />
               </a>
             </Button>

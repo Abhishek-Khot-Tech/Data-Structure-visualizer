@@ -27,12 +27,12 @@ export default function Footer() {
           <div className="flex flex-col md:flex-row justify-between items-center">
             <div className="mb-4 md:mb-0">
               <p className="text-slate-600 dark:text-slate-400 text-sm">
-                © {new Date().getFullYear()} DSA Visualizer. All rights reserved.
+                © {new Date().getFullYear()} Evalence . All rights reserved.
               </p>
             </div>
 
             <div className="flex space-x-6">
-              <a href="https://github.com/Nitinverma9784" className="text-slate-600 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-400">
+              <a href="https://github.com/Abhishek-Khot" className="text-slate-600 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-400">
                 GitHub
               </a>
               <a onClick={(event) => showComingSoonToast(event)} className="cursor-pointer text-slate-600 dark:text-slate-400 hover:text-purple-600 dark:hover:text-purple-400">
@@ -50,28 +50,28 @@ export default function Footer() {
                   <DialogHeader>
                     <DialogTitle className="text-lg font-semibold">👋 Contact Me</DialogTitle>
                     <DialogDescription className="text-sm text-gray-500">
-                      I'm <strong>Nitin Verma</strong>, the developer of this DSA Visualizer. Connect with me:
+                      I'm <strong>Abhishek Khot</strong>, the developer of this DSA Visualizer. Connect with me:
                     </DialogDescription>
                   </DialogHeader>
 
                   <div className="flex flex-col space-y-4 mt-3">
-                    <a href="mailto:nitinverma9784@gmail.com" className="flex items-center space-x-2 hover:text-purple-600 transition">
+                    <a href="mailto:khotabhishek15@gmail.com" className="flex items-center space-x-2 hover:text-purple-600 transition">
                       <Mail className="h-5 w-5" />
-                      <span>Email: nitinverma9784@gmail.com</span>
+                      <span>Email: khotabhishek15@gmail.com</span>
                     </a>
-                    <a href="https://github.com/Nitinverma9784" className="flex items-center space-x-2 hover:text-purple-600 transition">
+                    <a href="https://github.com/Abhishek-Khot" className="flex items-center space-x-2 hover:text-purple-600 transition">
                       <Github className="h-5 w-5" />
                       <span>GitHub</span>
                     </a>
-                    <a href="https://www.linkedin.com/in/nitin-verma-558ba5276/" className="flex items-center space-x-2 hover:text-purple-600 transition">
+                    <a href="https://www.linkedin.com/in/abhishek-r-khot-b42025260/" className="flex items-center space-x-2 hover:text-purple-600 transition">
                       <Linkedin className="h-5 w-5" />
                       <span>LinkedIn</span>
                     </a>
-                    <a href="https://x.com/ImKakashi106" className="flex items-center space-x-2 hover:text-purple-600 transition">
+                    <a href="https://x.com/Khot_Abhishek_3" className="flex items-center space-x-2 hover:text-purple-600 transition">
                       <Twitter className="h-5 w-5" />
                       <span>Twitter</span>
                     </a>
-                    <a href="https://www.instagram.com/nitinverma9401/" className="flex items-center space-x-2 hover:text-purple-600 transition">
+                    <a href="https://www.instagram.com/abhishek_khot_3/" className="flex items-center space-x-2 hover:text-purple-600 transition">
                       <Instagram className="h-5 w-5" />
                       <span>Instagram</span>
                     </a>
