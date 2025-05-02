@@ -86,7 +86,7 @@ export default function Navbar() {
   bg-gradient-to-r from-blue-500 to-purple-500 
   dark:bg-none dark:text-white"
                   >
-                    DSA Visualize
+                    SmartRecruitAI
                   </span>
                 </Link>
               </div>

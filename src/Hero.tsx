@@ -23,12 +23,10 @@ export default function Hero() {
             Interactive Learning
           </div>
           <h1 className="text-4xl md:text-6xl font-extrabold text-slate-900 dark:text-white mb-6 tracking-tight">
-            <span className="bg-clip-text text-transparent 
-              bg-gradient-to-r from-purple-400 via-pink-500 to-red-500 
-              dark:from-blue-400 dark:via-teal-300 dark:to-cyan-500">
+          <span className="typewriter-text bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-500 to-red-500">
               Visualize
-            </span>{" "}
             Data Structures & Algorithms
+            </span>{" "}
           </h1>
           <p className="text-xl text-slate-700 dark:text-slate-300 max-w-3xl mb-10">
             Explore, understand, and master algorithms through interactive visualizations. Compare algorithm performance
