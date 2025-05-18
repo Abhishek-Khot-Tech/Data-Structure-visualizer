@@ -27,7 +27,7 @@ export default function AlgorithmCategories() {
       icon: <Network className="h-6 w-6 text-green-500" />,
       link: "/algorithms/graph",
       algorithms: ["BFS", "DFS", "Dijkstra's", "Prim's", "Kruskal's"],
-      status: "coming-soon",
+      status: "implemented",
     },
     {
       title: "Dynamic Programming",
@@ -35,23 +35,23 @@ export default function AlgorithmCategories() {
       icon: <GitBranch className="h-6 w-6 text-yellow-500" />,
       link: "/algorithms/dp",
       algorithms: ["Fibonacci", "Knapsack", "LCS", "LIS"],
-      status: "coming-soon",
+      status: "implemented",
     },
     {
       title: "Greedy Algorithms",
       description: "Learn optimal local choices for global solutions",
       icon: <Workflow className="h-6 w-6 text-red-500" />,
       link: "/algorithms/greedy",
-      algorithms: ["Activity Selection", "Huffman Coding"],
-      status: "coming-soon",
+      algorithms: ["Activity Selection", "Huffman Coding", "Coin Change", "Fractional Knapsack"],
+      status: "implemented",
     },
     {
       title: "Mathematical Algorithms",
       description: "Explore fundamental mathematical computations",
       icon: <Sigma className="h-6 w-6 text-pink-500" />,
       link: "/algorithms/math",
-      algorithms: ["GCD (Euclidean)", "Sieve of Eratosthenes", "Prime Factorization"],
-      status: "coming-soon",
+      algorithms: ["GCD (Euclidean)", "Sieve of Eratosthenes", "Prime Factorization", "Matrix Multiplication", "Fast Exponentiation"],
+      status: "implemented",
     },
   ]
 

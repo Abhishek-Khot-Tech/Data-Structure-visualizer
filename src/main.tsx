@@ -10,9 +10,13 @@ import {
 } from "react-router";
 
 import About from './pages/About.tsx';
-import {ArraysPage,StacksPage,QueuesPage,LinkedListsPage} from './pages/data-structures';
+import {ArraysPage,StacksPage,QueuesPage,LinkedListsPage,TreesPage} from './pages/data-structures';
 import Sorting from './pages/Sorting.tsx';
 import Race from './pages/race/Race.tsx';
+import Graph from './pages/Graph.tsx';
+import DP from './pages/DP.tsx';
+import Greedy from './pages/Greedy.tsx';
+import Math from './pages/Math.tsx';
 
 // const router = createBrowserRouter(
 //   createRoutesFromElements(
@@ -30,17 +34,22 @@ import Race from './pages/race/Race.tsx';
 let router = createBrowserRouter([
   {
     path: "/",
-    element: <Layout />, // No <Outlet />, so child routes won’t show!
+    element: <Layout />,
     children: [
       { path: "", element: <Home /> },
       { path: "about", element: <About /> },
       { path: "algorithms/searching", element: <Searching /> },
       { path: "algorithms/sorting", element: <Sorting /> },
+      { path: "algorithms/graph", element: <Graph /> },
+      { path: "algorithms/dp", element: <DP /> },
+      { path: "algorithms/greedy", element: <Greedy /> },
+      { path: "algorithms/math", element: <Math /> },
       { path: "race", element: <Race /> },
       { path: "data-structures/arrays", element: <ArraysPage /> },
       { path: "data-structures/queues", element: <QueuesPage /> },
       { path: "data-structures/stacks", element: <StacksPage /> },
-      { path: "data-structures/linked-lists", element: <LinkedListsPage /> }
+      { path: "data-structures/linked-lists", element: <LinkedListsPage /> },
+      { path: "data-structures/trees", element: <TreesPage /> }
     ],
   },
 ]);

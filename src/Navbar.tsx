@@ -24,6 +24,7 @@ import {
   Layers,
   Database,
   ListTree,
+  Binary,
 } from "lucide-react";
 import { Toaster, toast } from "sonner";
 import { ThemeProvider } from "./context/theme";
@@ -136,17 +137,41 @@ export default function Navbar() {
                         Searching
                       </Link>
                     </DropdownMenuItem>
-                    <DropdownMenuItem onClick={showComingSoonToast}>
-                      <span className="flex items-center w-full cursor-pointer">
+                    <DropdownMenuItem>
+                      <Link
+                        to="/algorithms/graph"
+                        className="flex items-center w-full"
+                      >
                         <Network className="h-4 w-4 mr-2 text-green-500" />
                         Graph
-                      </span>
+                      </Link>
                     </DropdownMenuItem>
-                    <DropdownMenuItem onClick={showComingSoonToast}>
-                      <span className="flex items-center w-full cursor-pointer">
+                    <DropdownMenuItem>
+                      <Link
+                        to="/algorithms/dp"
+                        className="flex items-center w-full"
+                      >
                         <GitBranch className="h-4 w-4 mr-2 text-yellow-500" />
                         Dynamic Programming
-                      </span>
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      <Link
+                        to="/algorithms/greedy"
+                        className="flex items-center w-full"
+                      >
+                        <Zap className="h-4 w-4 mr-2 text-pink-500" />
+                        Greedy
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem>
+                      <Link
+                        to="/algorithms/math"
+                        className="flex items-center w-full"
+                      >
+                        <BarChart3 className="h-4 w-4 mr-2 text-indigo-500" />
+                        Math
+                      </Link>
                     </DropdownMenuItem>
                   </DropdownMenuContent>
                 </DropdownMenu>
@@ -196,6 +221,15 @@ export default function Navbar() {
                       >
                         <ListTree className="h-4 w-4 mr-2 text-yellow-500" />
                         Linked Lists
+                      </Link>
+                    </DropdownMenuItem>
+                    <DropdownMenuItem className="text-slate-700 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 focus:bg-slate-100 dark:focus:bg-slate-800 cursor-pointer">
+                      <Link
+                        to="/data-structures/trees"
+                        className="flex items-center w-full"
+                      >
+                        <Binary className="h-4 w-4 mr-2 text-red-500" />
+                        Trees
                       </Link>
                     </DropdownMenuItem>
                   </DropdownMenuContent>
@@ -289,20 +323,36 @@ export default function Navbar() {
                       Searching
                     </Link>
                     <Link
-                      to="/"
+                      to="/algorithms/graph"
                       className="text-slate-700 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center px-3 py-2 rounded-md text-sm"
-                      onClick={() => showComingSoonToast()}
+                      onClick={() => setIsOpen(false)}
                     >
                       <Network className="h-4 w-4 mr-2 text-green-500" />
                       Graph
                     </Link>
                     <Link
-                      to="/"
+                      to="/algorithms/dp"
                       className="text-slate-700 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center px-3 py-2 rounded-md text-sm"
-                      onClick={() => showComingSoonToast()}
+                      onClick={() => setIsOpen(false)}
                     >
                       <GitBranch className="h-4 w-4 mr-2 text-yellow-500" />
                       Dynamic Programming
+                    </Link>
+                    <Link
+                      to="/algorithms/greedy"
+                      className="text-slate-700 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center px-3 py-2 rounded-md text-sm"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      <Zap className="h-4 w-4 mr-2 text-pink-500" />
+                      Greedy
+                    </Link>
+                    <Link
+                      to="/algorithms/math"
+                      className="text-slate-700 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center px-3 py-2 rounded-md text-sm"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      <BarChart3 className="h-4 w-4 mr-2 text-indigo-500" />
+                      Math
                     </Link>
                   </div>
                 </div>
@@ -345,6 +395,14 @@ export default function Navbar() {
                     >
                       <ListTree className="h-4 w-4 mr-2 text-yellow-500" />
                       Linked Lists
+                    </Link>
+                    <Link
+                      to="/data-structures/trees"
+                      className="text-slate-700 dark:text-white hover:bg-slate-100 dark:hover:bg-slate-800 flex items-center  px-3 py-2 rounded-md text-sm"
+                      onClick={() => setIsOpen(false)}
+                    >
+                      <Binary className="h-4 w-4 mr-2 text-red-500" />
+                      Trees
                     </Link>
                   </div>
                 </div>
