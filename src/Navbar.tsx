@@ -77,7 +77,9 @@ export default function Navbar() {
       >
         <Toaster position="top-center" richColors closeButton />
 
-        <nav className="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-black">
+        {/* <nav className="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-black"> */}
+        {/* <nav className="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-black border-b border-white/20 dark:border-white/10"> */}
+        <nav className="fixed top-0 left-0 right-0 z-50 bg-white dark:bg-black border-b border-white/20 dark:border-white/10">
           <div className="max-w-screen-xl mx-auto px-4">
             <div className="flex items-center justify-between h-16">
               <div className="flex items-center">
@@ -87,7 +89,23 @@ export default function Navbar() {
   bg-gradient-to-r from-blue-500 to-purple-500 
   dark:bg-none dark:text-white"
                   >
-                    SmartRecruitAI
+                    <div className="flex-shrink-0 flex items-center space-x-2">
+                      <div className="w-9 h-9 rounded-xl bg-gradient-to-br from-cyan-400 to-blue-600 flex items-center justify-center shadow-md">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          fill="none"
+                          stroke="white"
+                          strokeWidth="2"
+                          viewBox="0 0 24 24"
+                          className="w-5 h-5"
+                        >
+                          <path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20V5a1 1 0 0 0-1-1H6.5A2.5 2.5 0 0 0 4 6.5v13zM6.5 15A4.5 4.5 0 0 0 2 19.5V6.5A4.5 4.5 0 0 1 6.5 2H21a2 2 0 0 1 2 2v15H6.5z" />
+                        </svg>
+                      </div>
+                      <span className="text-xl font-bold text-purple-400">
+                        SmartRecruitAI
+                      </span>
+                    </div>
                   </span>
                 </Link>
               </div>
